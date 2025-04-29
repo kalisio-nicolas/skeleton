@@ -17,3 +17,6 @@ jobs:
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
+        env:
+          KALISIO_GITHUB_URL: ${{ secrets.KALISIO_GITHUB_URL }}
+          SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
